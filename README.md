@@ -30,7 +30,7 @@ Afim de deixar o código com baixo acoplamento e limpo, a estratégia usada foi:
 
 O objetivo é facilitar manutenções e implementações futuras, principalmente em integrações entre APIs (que pode ser alterada com o tempo), evitando uma refatoração extensa ou até uma reescrita completa do código.
 
-Este é um exemplo resultante de um estudo de caso, onde temos duas fontes de integração externa (a implementação das APIs em si não fazem parte do escopo deste estudo):
+Este é um exemplo resultante de um estudo de caso, onde temos duas fontes de integração externa (a implementação das APIs em si não faz parte do escopo deste estudo):
 
 - https://www.weatherapi.com
 - https://www.weatherbit.io
