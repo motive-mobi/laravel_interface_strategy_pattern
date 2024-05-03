@@ -1,0 +1,17 @@
+# create a single action controller
+php artisan make:controller WeatherController -i
+
+No desenvolvimento de software e web, é sempre importante escrever código que
+é sustentável e extensível. A solução que você criar primeiro provavelmente
+Muda com o tempo. Então, você precisa ter certeza de escrever seu código de uma forma
+isso não requer uma reescrita ou refatoração completa no futuro.
+O padrão de estratégia pode ser usado para melhorar a capacidade de extensão do seu
+código e também melhorar a capacidade de manutenção ao longo do tempo.
+
+Interfaces no Laravel - Como evitar refatoração extensa em manutenções futuras e manter o código limpo, organizado e testável
+
+Supondo o seguinte cenário: a nossa aplicação precisa consultar uma API externa de dados climáticos e retornar esses dados para o front.
+
+A estratégia adotada seguiu o seguinte padrão:
+
+- Criação de um Service Provider (WeatherDataServiceProvider), centralizando as camadas de lógica e abstração:
